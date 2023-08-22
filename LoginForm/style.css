@@ -64,16 +64,23 @@ body {
 .form-label {
     position: absolute;
     display: block;
-    top: 0px;
-    font-size: 15px;
+    top: 30px;
+    font-size: 17px;
     transition: 0.5s;
     padding-left: 3px;
 }
-
-.form-field:placeholder-shown ~ .form-label {
-    top: 10px;
-    font-size: 17px;    
+/* ------------------------------------------------------ */
+.form-field:focus ~ .form-label,
+.form-field:valid ~ .form-label{
+    top: 5px;
+    font-size: 15px;
 }
+
+/* .form-field:placeholder-shown ~ .form-label {
+    top: 20px;
+    font-size: 17px;    
+} */
+/* ------------------------------------------------------ */
 
 .remind-pass {
     display: flex;
@@ -134,7 +141,6 @@ body {
         padding: 20px 18px;
         box-shadow: 7px 7px 20px aqua;
     }
-    
 }
 
 
