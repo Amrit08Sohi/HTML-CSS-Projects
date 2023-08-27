@@ -15,14 +15,14 @@
                 <span class="material-symbols-outlined">
                     person
                 </span>
-                <input type="text" placeholder="Username" name="username" class="form-field" required>
+                <input type="text" placeholder="Username" name="username" class="form-field" id="username" required>
                 <label for="username" class="form-label">Username</label>
             </div>
             <div class="field-container">
-                <span class="material-symbols-outlined">
+                <span class="material-symbols-outlined show-pass">
                     visibility_off
                     </span>
-                <input type="password" placeholder="Password" name="password" class="form-field" required  >
+                <input type="password" placeholder="Password" name="password" class="form-field" id="password" required>
                 <label for="password" class="form-label">Password</label>
             </div>
     
@@ -44,22 +44,23 @@
             <span class="material-symbols-outlined">
                 person
             </span>
-            <input type="text" placeholder="Username" name="username" class="form-field" required>
-            <label for="username" class="form-label">Username</label>
+            <input type="text" placeholder="Username" name="username" class="form-field" id="userName" required>
+            <label for="userName" class="form-label">Username</label>
         </div>
         <div class="field-container">
             <span class="material-symbols-outlined">
                 mail
             </span>
-            <input type="email" placeholder="Email" name="email" class="form-field" required>
+            <input type="email" placeholder="Email" name="email" class="form-field" id="email" required>
             <label for="email" class="form-label">Email</label>
         </div>
         <div class="field-container">
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined show-pass2">
                 visibility_off
-                </span>
-            <input type="password" placeholder="Password" name="password" class="form-field" required  >
-            <label for="password" class="form-label">Password</label>
+            </span>
+            <input type="password" placeholder="Password" name="password" class="form-field"
+            id="passWord"  required  >
+            <label for="passWord" class="form-label">Password</label>
         </div>
 
         <div class="remind-pass">
@@ -67,12 +68,12 @@
         </div>
 
         <div class="btn-container">
-            <button class="login">SignUp</button>
+            <button class="sign-up">SignUp</button>
         </div>
         <label for="signUp-now">
             Already have an account?
         </label>
-        <a href="#" onclick="sign_up()" id="signUp-now">Login</a>
+        <a href="#" onclick="sign_up()" id="Login">Login</a>
         </div>
          
     </div>
@@ -90,7 +91,43 @@
             else{
                 f.style.transform =" rotatey(0deg)";
                 b.style.transform=" rotatey(180deg)";
-                c++
+                c++;
+            }
+        }
+
+        const show_pass = document.querySelector('.show-pass');
+        const loginPass = document.getElementById('password');
+
+        show_pass.addEventListener('click',changeType)
+
+        function changeType ()  {
+            let text = this.innerText;
+            console.log(text);
+            // this refer to show_pass
+            if(text==="visibility_off") {
+                this.innerText = 'visibility';
+                loginPass.type = 'text'
+            } else {
+                this.innerText = 'visibility_off';
+                loginPass.type = 'password' 
+            }
+        }
+
+
+        const signUpPass = document.getElementById('passWord');
+        const show_pass2 = document.querySelector('.show-pass2');
+
+        show_pass2.addEventListener('click',changeType2)
+
+        function changeType2 ()  {
+            let text = this.innerText;
+            // this refer to show_pass2
+            if(text==="visibility_off") {
+                this.innerText = 'visibility';
+                signUpPass.type = 'text'
+            } else {
+                this.innerText = 'visibility_off';
+                signUpPass.type = 'password' 
             }
         }
     </script>
