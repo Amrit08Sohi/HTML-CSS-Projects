@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>LogIn-SignUp</title>
 </head>
 <body>
-    
+    <div class="card">
+        <div id="front">
+               <h1>login</h1>
+
+        </div>
+        <div id="back">
+          <h1>sign_up</h1>
+        </div>
+         
+    </div>
+    <label for="go">I don't have an account! </label>
+    <button id="go" value="sign_up" onclick="sign_up()">
+        sign up
+    </button>
+
+    <script>
+        let c=1;
+        const f= document.querySelector('#front');
+        const b=document.querySelector('#back');
+        function sign_up(){
+            if(c%2!=0){
+            f.style.transform =" rotatey(-180deg)";
+            b.style.transform=" rotatey(0deg)";
+          c++;
+            }
+            else{
+                f.style.transform =" rotatey(0deg)";
+            b.style.transform=" rotatey(180deg)";
+            c++
+            }
+        }
+    </script>
 </body>
 </html>
