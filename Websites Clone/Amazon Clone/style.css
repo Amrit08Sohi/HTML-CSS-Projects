@@ -1,0 +1,429 @@
+/* This CSS code is setting default styles for all HTML elements on the page. It sets the margin and
+padding to 0, sets the font family to Arial, Helvetica, sans-serif, and sets the box-sizing property
+to border-box. This ensures that all elements have consistent styling and layout throughout the
+page. */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+/* This CSS code is styling the navbar element with a height of 60px, a background color of #0F1111,
+and white text color. It is also using flexbox to center the navbar items both horizontally and
+vertically with space-evenly justification. */
+#navbar{
+    height: 60px;
+    background-color: #0F1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* This CSS code is setting the height and width of the element with the ID "nav-logo" to 50px and
+100px respectively. */
+#nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+/* This CSS code is styling an element with the ID "logo". It is setting the background image of the
+element to the image file located at "/Resources/amazon_logo.png". It is also setting the height of
+the element to 50px and the width to 100%. Finally, it is using the "background-size" property to
+ensure that the background image covers the entire element. */
+#logo{
+    background-image: url('/Resources/amazon_logo.png');
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+}
+
+/* This CSS code is defining a class called "border" that sets the border of an element to 1.2 pixels
+wide and transparent. When the element is hovered over, the border changes to 1.2 pixels wide and
+white. This class can be applied to any HTML element to add a border that changes on hover. */
+.border{
+    border: 1.2px solid transparent;
+}
+.border:hover{
+    border: 1.2px solid white;
+}
+
+
+/*nav address styling*/
+
+/* This CSS code is defining a class called "address_icon" that sets the display property to flex and
+adds a margin of 5 pixels to the left of the element. This class can be applied to any HTML element
+to display it as a flex container and add a left margin of 5 pixels. */
+.address_icon {
+    display: flex;
+    margin-left: 5px;
+}
+/* This CSS code is styling an element with the class "deliverTo". It is setting the text color to a
+light gray (#cccccc), the font size to 0.8rem, and adding a left margin of 20 pixels. This class can
+be applied to any HTML element to style it with these properties. */
+.deliverTo {
+    color: #cccccc;
+    font-size: 0.8rem;
+    margin-left: 20px;
+}
+
+/* This CSS code is selecting an `i` element that is a child of an element with the class
+`address_icon` and setting its font size to 1.1rem. This is likely used to style an icon within the
+address section of the navbar. */
+.address_icon i {
+    font-size: 1.1rem;
+}
+/* This CSS code is styling an element with the class "curr_location". It is setting the text color to
+white, the font size to 1rem, and adding a left margin of 3 pixels. This class can be applied to any
+HTML element to style it with these properties. */
+.curr_location {
+    color: white;
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+/* nav search*/
+/* This CSS code is styling the search bar in the navbar. It is setting the display property to flex,
+which allows the search bar to be horizontally centered within its container. It is also setting the
+width to 850 pixels, the height to 40 pixels, and the border-radius to 4 pixels, which gives the
+search bar a rounded appearance. Finally, it is using the justify-content property with the value of
+space-evenly to evenly distribute the search bar's child elements horizontally within the container. */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    width: 850px;
+    height: 40px;
+    border-radius: 4px;
+}
+/* This CSS code is setting a hover effect on the element with the class "nav-search". When the user
+hovers over this element, it will add a 2-pixel solid orange border around it. */
+.nav-search:hover {
+    border: 3.4px solid orange;
+}
+
+/* This CSS code is defining the styling for a select element with the class "search-select". It is
+setting the background color to a light gray (#f3f3f3), the width to 50 pixels, and the text
+alignment to center. It is also adding a border-top-left-radius and border-bottom-left-radius of 4
+pixels to give the element a rounded appearance on the left side. Finally, it is setting the border
+property to none, which removes the default border around the select element. */
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+/* This CSS code is styling an input element with the class "search-input". It is setting the width of
+the input element to 100% of its parent container, which will cause it to fill the available space.
+It is also setting the font size to 1rem and removing the default border around the input element by
+setting the border property to none. This is likely used to create a search bar in the navbar with a
+custom style. */
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+/* This CSS code is defining the styling for an element with the class "search-icon". It is setting the
+width of the element to 50 pixels, making it a flex container with the display property set to flex.
+It is also setting the background color to a shade of orange (rgb(240, 160, 12)), centering its
+child elements both horizontally and vertically with justify-content and align-items properties,
+respectively. It is setting the font size to 1.4rem and adding a border-top-right-radius and
+border-bottom-right-radius of 4 pixels to give the element a rounded appearance on the right side.
+Finally, it is setting the text color to a dark gray (#0F1111). This is likely used to style an icon
+within the search bar of the navbar. */
+.search-icon {
+    width: 50px;
+    display: flex;
+    background-color: rgb(240, 160, 12);
+    justify-content: center; 
+    align-items: center; /*vertically*/
+    font-size: 1.4rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0F1111;
+}
+
+/*Sign in and return */
+/* This CSS code is defining two classes, "upper-text" and "lower-text", that set the font size of text
+to 0.75rem and 0.9rem, respectively. These classes can be applied to any HTML element to style it
+with these font sizes. It is likely used to style text in the "Sign in" and "Returns & Orders"
+sections of the navbar. */
+.upper-text {
+    font-size: 0.75rem;
+}
+.lower-text {
+    font-size: 0.9rem;
+    
+}
+
+
+/* Cart */
+
+/* This CSS code is defining the styling for the shopping cart icon in the navbar. It is setting the
+font size of the icon to 1.8rem and the font size of the parent element with the class "nav-cart" to
+0.9rem. This is likely used to adjust the size of the shopping cart icon and its accompanying text
+in the navbar. */
+.nav-cart i {
+    font-size: 1.8rem;
+}
+.nav-cart {
+    font-size: 0.9rem;
+}
+
+/* panel */
+
+/* This CSS code is defining the styling for a panel element. It is setting the height of the panel to
+40 pixels, the background color to a dark gray (#222f3d), and the text color to white. It is also
+using flexbox to center the child elements both horizontally and vertically with space-evenly
+justification. This is likely used to create a panel with evenly spaced child elements, such as a
+navigation menu or a list of options. */
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* This CSS code is selecting all `li` elements that are children of an element with the class
+`panel-opts` and setting their display property to `inline`, which will cause them to be displayed
+horizontally in a line. It is also adding a left margin of 15 pixels to each `li` element and
+removing the default bullet point with the `list-style-type` property set to `none`. This is likely
+used to style a horizontal navigation menu within a panel element. */
+.panel-opts li {
+    display: inline;
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+.panel-opts {
+    width: 80%;
+    font-size: 0.85rem;
+}
+.panel-deals {
+    font-size: 0.9rem;
+}
+
+
+    /* hero section */
+
+/* This CSS code is styling the hero section of the webpage. It is setting the background image of the
+section to the image file located at "/Resources/hero_image.jpg". It is also setting the height of
+the section to 400 pixels, and using the "background-size" property to ensure that the background
+image covers the entire section. It is using flexbox to center the child elements both horizontally
+and vertically with justify-content and align-items properties, respectively. Finally, it is
+aligning the child elements to the bottom of the section with the align-items property set to
+flex-end. */
+#hero-section {
+    background-image: url("/Resources/hero_image.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}  
+
+/* This CSS code is styling a message box within the hero section of the webpage. It is setting the
+background color of the box to white and the text color to black. It is also using flexbox to center
+the child elements both horizontally and vertically with justify-content and align-items properties,
+respectively. It is setting the height of the box to 40 pixels, the font size to 0.85rem, and the
+width to 80% of its parent container. Finally, it is adding a margin of 30 pixels to the bottom of
+the box. */
+.hero-message{
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+/* The above code is defining a CSS style for links within an element with the class "hero-message".
+The links will have a color of #007185 (a shade of blue-green) and no text decoration (such as
+underlining). */
+.hero-message a {
+    color: #007185;
+    text-decoration: none;
+}
+
+
+/* main-section */
+
+/* The above code is defining the CSS styles for the main section of a webpage. It sets the background
+color to a light grayish-blue, and uses flexbox to arrange the contents of the section. The
+`flex-wrap` property allows the contents to wrap onto multiple lines if necessary, and
+`justify-content: space-evenly` centers the contents horizontally with equal spacing between them. */
+#main-section{
+    background-color: #e2e7e6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+}
+/* The above code is defining a CSS class named "box" which sets the background color to white, height
+to 400px, width to 23%, padding to 20px on top and bottom and 15px on the left and right, and
+margin-top to 20px. This class can be applied to HTML elements to give them these styles. */
+.box{
+    background-color: white;
+    height: 400px;
+    width: 23%;
+    padding: 20px 0px 15px;
+    margin-top: 20px;
+}
+/* The above code is defining a CSS class named "box-img" which sets the height of the element to 300
+pixels, sets the background image to cover the entire element, and adds a top and bottom margin of
+1rem. This class can be applied to an HTML element to style it accordingly. */
+.box-img {
+    height: 300px;
+    background-size: cover ;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* The above code is defining a CSS style for links within an element with the class "box-content". The
+links will have a color of #007185 (a shade of blue-green) and will not have an underline or any
+other text decoration. */
+.box-content a {
+    color: #007185;
+    text-decoration: none;
+}
+/* The above code is defining a CSS style for an element with the class "box-content". It sets the left
+and right margins of the element to 1rem each. */
+.box-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* footer */
+
+/* The above code is defining a CSS style for the footer element. It sets a margin-top of 20 pixels for
+the footer element. */
+footer {
+    margin-top: 20px;
+}
+
+/* The above code is defining the CSS styles for a footer panel with class name "foot-panel1". It sets
+the background color to #37475a, text color to white, height to 50px, and aligns the content to the
+center both horizontally and vertically using flexbox. The font size is set to 0.9rem. */
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+
+/* The above code is defining a CSS class called "foot-panel2" which sets the display property to
+"flex", sets the background color to "#222f3d", sets the text color to white, sets the height to 300
+pixels, and sets the justify-content property to "space-evenly". This class can be applied to an
+HTML element to style it accordingly. */
+.foot-panel2{
+    display: flex;
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+
+/* The above code is defining CSS styles for a list element within a footer panel. It sets a margin-top
+of 30px for the unordered list and a margin-top of 10px for each list item. It also removes the
+default bullet points for the list items using the "list-style" property. */
+.foot-panel2 ul {
+    margin-top: 30px;
+}
+
+.foot-panel2 li {
+    list-style: none;
+    margin-top: 10px;
+}
+/* The above code is defining a CSS style for anchor tags within an element with the class
+"foot-panel2". The style removes the underline from the text decoration and sets the font size to
+0.9rem. */
+.foot-panel2 a {
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* The above code is defining a CSS class named "foot-panel3" which sets the display property to
+"flex", aligns items to the center, justifies content to the center, sets the background color to
+#222f3d, sets a top border of 0.5px solid white, and sets the height to 70px. This class can be
+applied to an HTML element to style it accordingly. */
+.foot-panel3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222f3d;
+    border-top: 0.5px solid white;
+    height: 70px;
+}
+
+/* The above code is defining a CSS class called "logo" which sets the background image of an element
+to the Amazon logo image file located in the "/Resources" folder. It also sets the height of the
+element to 50 pixels, the width to 100 pixels, and scales the background image to cover the entire
+element. */
+.logo{
+    background-image: url('/Resources/amazon_logo.png');
+    height: 50px;
+    background-size: cover;
+    width: 100px;
+}
+
+/* The above code is defining the CSS styles for a class named "foot-panel4". It sets the display
+property to flex, aligns items to the center, justifies content to the center, sets the background
+color to #0f1111, sets the height to 80px, and sets the font size to 0.8rem. This class is likely
+used to style a footer panel on a webpage. */
+.foot-panel4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0f1111;
+    height: 80px;
+    font-size: 0.8rem;
+}
+/* The above code is defining a CSS style for an unordered list element that is a child of an element
+with a class of "pages". The style sets the display property to "flex", which allows the list items
+to be arranged in a flexible layout. The align-items property centers the items vertically within
+the container, and the justify-content property centers the items horizontally within the container. */
+.pages ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The above code is defining CSS styles for a list of pages. It removes the default bullet points from
+the list items and adds some right padding. It also removes the underline from the links within the
+list items. */
+.pages li{
+    list-style: none;
+    padding-right: 20px;
+}
+.pages li a{
+    text-decoration: none;
+}
+
+.copyright {
+    padding-top: 6px; 
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fc-text {
+    color: #DDDDDD;
+}
+
+
+
+

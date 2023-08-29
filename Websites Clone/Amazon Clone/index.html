@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- The above code is creating a header section for a webpage with a navigation bar that includes a
+    logo, a search bar, options to sign in and view account details, an option to view returns and
+    orders, and a cart icon. It also includes a section to select the delivery location. -->
+    <header>
+        <!-- Nav Section -->
+        <div id="navbar">
+            <div id="nav-logo" class="border">
+                <div id="logo">
+                </div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="deliverTo">Deliver to</p>
+                <div class="address_icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="curr_location">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select name="" id="" class="search-select">
+                    <option value="">All</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-signin border">
+                <p class="upper-text">Hello, sign in</p>
+                <p class="lower-text fw-700">Account and Lists</p>
+            </div>
+
+            <div class="nav-return border">
+                <p class="upper-text">Returns</p>
+                <p class="lower-text">& Orders</p>
+            </div>
+
+
+            <div class="nav-cart border fw-700">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div>
+
+        <!-- Second Section -->
+
+        <!-- The `<div class="panel">` is a section of an Amazon clone website that contains a panel with
+        links to different pages such as "Today's Deals", "Customer Service", "Registry", "Gift
+        Cards", and "Sell". The panel also includes a "Shop great deals now" link. -->
+        <div class="panel">
+
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+
+            <div class="panel-opts">
+                <ul>
+                    <li class="border">Today's Deals</li>
+                    <li class="border">Customer Service</li>
+                    <li class="border">Registry</li>
+                    <li class="border">Gift Cards</li>
+                    <li class="border">Sell</li>
+                </ul>
+            </div>
+
+            <div class="panel-deals border fw-700">
+                Shop great deals now
+            </div>
+        </div>
+    </header>
+
+    <!-- The `<div id="hero-section">` is a section of an Amazon clone website that displays a message to
+    the user informing them that they are on amazon.com and can also shop on Amazon India for
+    millions of products with fast local delivery. The message is displayed within a `<div
+    class="hero-message">` div and includes a link to amazon.in. -->
+    <div id="hero-section">
+        <div class="hero-message">
+            You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="amazon.in">Click here to go to amazon.in</a>
+        </div>
+    </div>
+
+    <!-- The `<div id="main-section">` is a section of an Amazon clone website that displays eight boxes
+    with images and links to different product categories such as "Towel and Curtains", "Furniture",
+    "SmartPhones", "Beauty Picks", "Pet Care", "Toys", and "Discover Fashion trends". Each box has a
+    heading (`<h2>`) that describes the category and an image (`<div class="box-img">`) that
+    represents the category. The "See more" link (`<a href="">See more</a>`) takes the user to a
+    page with more products in that category. -->
+    <div id="main-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Towel and Curtains</h2>
+                <div class="box-img" style="background-image: url('./Resources/box1_image.jpg');">
+                </div>
+                <a href="">See more</a>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Towel and Curtains</h2>
+                <div class="box-img" style="background-image: url('./Resources/box2_image.jpg');">
+                </div>
+                <a href="">See more</a>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Furniture</h2>
+                <div class="box-img" style="background-image: url('./Resources/box3_image.jpg');">
+                </div>
+                <a href="">See more</a>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content" >
+                <h2>SmartPhones</h2>
+                <div class="box-img" style="background-image: url('./Resources/box4_image.jpg');">
+                </div>
+                <a href="">See more</a>
+            </div>
+        </div>
+        <div class="box5 box">
+            <div class="box-content">
+                <h2>Beauty Picks</h2>
+                <div class="box-img" style="background-image: url('./Resources/box5_image.jpg');">
+                </div>
+                <a href="">See more</a>
+            </div>
+        </div>
+        <div class="box6 box">
+            <div class="box-content">
+                <h2>Pet Care</h2>
+                <div class="box-img" style="background-image: url('./Resources/box6_image.jpg');">
+                </div>
+                <a href="">See more</a>
+            </div>
+        </div>
+        <div class="box7 box">
+            <div class="box-content">
+                <h2>Toys</h2>
+                <div class="box-img" style="background-image: url('./Resources/box7_image.jpg');">
+                </div>
+                <a href="">See more</a>
+            </div>
+        </div>
+        <div class="box8 box">
+            <div class="box-content">
+                <h2>Discover Fashion trends</h2>
+                <div class="box-img" style="background-image: url('./Resources/box8_image.jpg');">
+                </div>
+                <a href="">See more</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- The `<div class="foot-panel1">` is a footer section of an Amazon clone website that contains
+        a link to go back to the top of the page. The text "Back to Top" is displayed within this
+        div. -->
+        <div class="foot-panel1">
+            Back to Top
+        </div>
+        <!-- The `<div class="foot-panel2">` is a footer section of an Amazon clone website. It contains
+        four unordered lists (`<ul>`) with links to pages such as "Careers", "Blog", "About",
+        "Investor Relations", "Amazon Devices", and "Amazon Sciences". Each unordered list has a
+        heading (`<p class="fw-700">Get to Know Us</p>`) that describes the links in the list. -->
+        <div class="foot-panel2">
+            <ul>
+                <p class="fw-700">Get to Know Us</p>
+                <li><a href="#" class="fc-text">Careers</a></li>
+                <li><a href="#" class="fc-text">Blog</a></li>
+                <li><a href="#" class="fc-text">About</a></li>
+                <li><a href="#" class="fc-text">Inverstor Relations</a></li>
+                <li><a href="#" class="fc-text">Amazon Devices</a></li>
+                <li><a href="#" class="fc-text">Amazon Sciences</a></li>
+            </ul>
+            <ul>
+                <p class="fw-700">Get to Know Us</p>
+                <li><a href="#" class="fc-text">Careers</a></li>
+                <li><a href="#" class="fc-text">Blog</a></li>
+                <li><a href="#" class="fc-text">About</a></li>
+                <li><a href="#" class="fc-text">Inverstor Relations</a></li>
+                <li><a href="#" class="fc-text">Amazon Devices</a></li>
+                <li><a href="#" class="fc-text">Amazon Sciences</a></li>
+            </ul>
+            <ul>
+                <p class="fw-700">Get to Know Us</p>
+                <li><a href="#" class="fc-text">Careers</a></li>
+                <li><a href="#" class="fc-text">Blog</a></li>
+                <li><a href="#" class="fc-text">About</a></li>
+                <li><a href="#" class="fc-text">Inverstor Relations</a></li>
+                <li><a href="#" class="fc-text">Amazon Devices</a></li>
+                <li><a href="#" class="fc-text">Amazon Sciences</a></li>
+            </ul>
+            <ul>
+                <p class="fw-700">Get to Know Us</p>
+                <li><a href="#" class="fc-text">Careers</a></li>
+                <li><a href="#" class="fc-text">Blog</a></li>
+                <li><a href="#" class="fc-text">About</a></li>
+                <li><a href="#" class="fc-text">Inverstor Relations</a></li>
+                <li><a href="#" class="fc-text">Amazon Devices</a></li>
+                <li><a href="#" class="fc-text">Amazon Sciences</a></li>
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo">  
+            </div>
+        </div>
+
+        <!-- This is the footer section of an Amazon clone website. The `foot-panel4` div contains links
+        to pages such as "Conditions of Use", "Privacy Notice", and "Your Ads Privacy Choices". The
+        `pages` div contains an unordered list of these links. The `copyright` div displays the
+        copyright information for Amazon.com and its affiliates. -->
+        <div class="foot-panel4 fc-text">
+            <div class="pages">
+                <ul>
+                    <li><a href="#" class="fc-text">Conditions of Use</a></li>
+                    <li><a href="#" class="fc-text">Privacy Notice</a></li>
+                    <li><a href="#" class="fc-text">Your Ads Privacy Choices</a></li>
+                </ul>
+            </div>
+            <div class="copyright fw-700">
+                © 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
