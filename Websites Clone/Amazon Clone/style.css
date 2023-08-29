@@ -33,7 +33,7 @@ element to the image file located at "/Resources/amazon_logo.png". It is also se
 the element to 50px and the width to 100%. Finally, it is using the "background-size" property to
 ensure that the background image covers the entire element. */
 #logo{
-    background-image: url('/Resources/amazon_logo.png');
+    background-image: url('./Resources/amazon_logo.png');
     height: 50px;
     width: 100%;
     background-size: cover;
@@ -220,7 +220,7 @@ and vertically with justify-content and align-items properties, respectively. Fi
 aligning the child elements to the bottom of the section with the align-items property set to
 flex-end. */
 #hero-section {
-    background-image: url("/Resources/hero_image.jpg");
+    background-image: url("./Resources/hero_image.jpg");
     height: 400px;
     background-size: cover;
     display: flex;
