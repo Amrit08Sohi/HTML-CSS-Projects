@@ -79,6 +79,7 @@
     </div>
 
     <script>
+        // Flip Logic
         let c=1;
         const f= document.querySelector('#front');
         const b=document.querySelector('#back');
@@ -95,14 +96,15 @@
             }
         }
 
+
+        // Password type change logic
         const show_pass = document.querySelector('.show-pass');
         const loginPass = document.getElementById('password');
-
         show_pass.addEventListener('click',changeType)
 
         function changeType ()  {
             let text = this.innerText;
-            console.log(text);
+            //console.log(text);
             // this refer to show_pass
             if(text==="visibility_off") {
                 this.innerText = 'visibility';
@@ -112,8 +114,6 @@
                 loginPass.type = 'password' 
             }
         }
-
-
         const signUpPass = document.getElementById('passWord');
         const show_pass2 = document.querySelector('.show-pass2');
 
@@ -130,6 +130,8 @@
                 signUpPass.type = 'password' 
             }
         }
+
     </script>
+    
 </body>
 </html>
