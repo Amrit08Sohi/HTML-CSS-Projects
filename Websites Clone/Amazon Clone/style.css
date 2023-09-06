@@ -44,6 +44,7 @@ wide and transparent. When the element is hovered over, the border changes to 1.
 white. This class can be applied to any HTML element to add a border that changes on hover. */
 .border{
     border: 1.2px solid transparent;
+    padding: 4px 6px;
 }
 .border:hover{
     border: 1.2px solid white;
