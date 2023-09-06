@@ -1,0 +1,267 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Navbar styling */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+#logo img{
+    height: 80px;
+    padding: 3px 25px;
+    cursor: pointer;
+}
+
+/* List Styling */
+#navigation{
+    margin: 10px 10px;
+}
+
+.item{
+    display: inline;
+    list-style: none;
+}
+
+.item a{
+    text-decoration: none;
+    padding: 3px 20px;
+    font-size: 17px;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+.item a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* section home */
+#home{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid yellow; */
+    height: 390px;
+    padding: 10px 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../images/pexels-hasan-albari-1229861.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 5px;
+    font-family: cursive;
+}
+
+#home p{
+    font-family: cursive;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.btn{
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+/* Services Section */
+
+#services-container h1{
+    margin:20px 15px 15px 15px;
+    font-family: cursive;
+    font-size: 35px;
+}
+#services{
+    display: flex;
+    margin: 10px;
+}
+#services .box{
+    border: 2px solid black;
+    margin: 6px;
+    padding: 15px;
+    border-radius: 23px;
+    background-color: rgb(236, 224, 224);
+}
+#services .box img{
+    height: 160px;
+    width: 170px;
+    margin: 5px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.box h2{
+    font-family: cursive;
+}
+.box p{
+    font-family: cursive;
+}
+
+
+/* Client Section */
+#client-section{
+    /* height: 250px; */
+    position: relative;
+    margin-top: 35px;
+}
+#client-section::before{
+    content: "";
+    background: url('../images/pexels-daniel-absi-952670.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#client-section h1{
+    /* margin:20px; */
+    padding-top: 20px;
+    font-family: cursive;
+    font-size: 35px;
+}
+
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 100px;
+    cursor: pointer;
+}
+
+/* Contact section */
+#contact h1{
+    padding-top: 20px;
+    font-family: cursive;
+    font-size: 35px;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background: url('../images/pexels-vincent-ma-janssen-1310777.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: cursive;
+}
+
+#contact-box input[type = 'submit']{
+    display: block;
+    width: 30%;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    font-family: cursive;
+    cursor: pointer;
+}
+#contact-box input[type = 'submit']:hover{
+    /* background-color: rgb(215, 240, 240); */
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+#contact-box input[type = 'reset']{
+    display: block;
+    width: 40%;
+    margin: 6px auto;
+    font-size: 1.1rem;
+    font-family: cursive;
+    cursor: pointer;
+}
+#contact-box input[type = 'reset']:hover{
+    /* background-color: rgb(215, 240, 240); */
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family: cursive;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+footer{
+    background-color: black;
+    color: wheat;
+    padding: 9px 20px;
+}
+
+/* utility classes */
+.text-center{
+    text-align: center;
+}

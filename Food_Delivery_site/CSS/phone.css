@@ -1,0 +1,81 @@
+/* body{background-color: red;} */
+
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 13px;
+    padding: 1px 8px;
+}
+#navbar div img{
+    height: 60px;
+    padding: 8px;
+}
+
+#navbar ul{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+} 
+/* home */
+section#home{
+    height: 320px;
+    padding: 5px 30px;
+}
+#home h1.text-center{
+    font-size: 30px;
+}
+section#home:before{
+    height: 460px;
+}
+#home p.text-center{
+    font-size: 13px;
+}
+
+section#home .btn{
+    margin: 6px;
+    padding: 3px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+/* Services */
+#services{
+    flex-direction: column;
+}
+
+
+/* Cliets */
+#clients{
+    flex-wrap: wrap;
+}
+
+#clients .client-item img{
+    height: 70px;
+    width: 70px;
+}
+
+
+/* Contact us */
+section#contact #contact-box form{
+    width: 70%;
+}
+
+section#contact #contact-box form input[type = 'submit']{
+    padding: 3px;
+    font-size: 0.6rem;
+    width: 50%;
+    /* font-weight: bold; */
+}
+section#contact #contact-box form input[type = 'reset']{
+    padding: 3px;
+    font-size: 0.6rem;
+    width: 60%;
+}
+
+
+/* footer */
+
