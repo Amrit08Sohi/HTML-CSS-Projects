@@ -1,21 +1,26 @@
  /* CSS Reset */
  body{
     font-family: 'Ubuntu', sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background: url('img/pexels-anush-gorak-1431282.jpg');
     background-repeat: no-repeat;
-    background-size: 100rem;
+    background-size: 100%;
     color: white;
-    /* height: 4000px; */
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
 }
 
 .left{
     /* border: 2px solid red; */
     display: inline;
     position: absolute;
-    left: 34px;
-    top: 15px;
+    left: 30px;
+    top: 10px;
 }
 .left img{
     width: 80px;
@@ -23,6 +28,7 @@
     cursor: pointer;
     position: absolute;
     left: 20px;
+    top: -10px;
 }
 .left div:hover{
     color: rgb(85, 198, 198);
@@ -33,7 +39,7 @@
     position: absolute;
     /* width: 100px; */
     /* line-height: 150px; */
-    top: 50px;
+    top: 40px;
     left: 25px;
     font-size: 20px;
 }
@@ -43,13 +49,14 @@
     /* height: 25px; */
     position: absolute;
     right: 60px;
-    top: 30px;
+    top: 18px;
 }
 .mid{
     /* border: 2px solid green; */
     display: block;
     width: 40%;
-    margin: 15px auto;
+    /* margin: 0px auto; */
+    margin: auto;
 }
 
 .navbar{
@@ -57,6 +64,7 @@
 }
 .navbar li{
     display: inline-block;
+    list-style-type: none;
     padding: 5px 18px;
     font-size: 20px;
 }
@@ -65,20 +73,21 @@
     text-decoration: none;
     cursor: pointer;
 }
-.navbar li a:hover,.navbar li a.active{
+.navbar li a:hover,.navbar li .active{
     color: rgb(85, 198, 198);
-    /* text-decoration: underline; */
+
 }
 .btn{
     font-family: 'Ubuntu', sans-serif;
-    margin:5px 15px;
+    margin: 5px 15px;
     color: white;
     background-color: black;
     border: 2px solid white;
-    padding: 3px 13px;
+    padding: 4px 15px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 17px;
     cursor: pointer;
+    outline: none;
 }
 .btn:hover{
     border-color: rgb(182, 234, 234);
@@ -86,24 +95,29 @@
 .container{
     border: 2px solid white;
     width: 30%;
-    padding: 10px;
-    padding-bottom: 15px;
-    margin: 100px 70px;
-    border-radius: 15px;
+    padding: 15px 10px;
+    margin: 90px 50px;
+    border-radius: 30px;
 }
 .container:hover{
     border-color: rgb(85, 198, 198);
 }
 .form-group input{
-    text-align: center;
-    border: 2px solid black;
+    border: none;
+    border-bottom: 2px solid white;
     display: block;
-    width: 220px;
-    margin: 6px auto;
-    padding: 2px 2px;
-    border-radius: 10px;
-    font-size: 16px;
+    width: 250px;
+    margin: 8px auto;
+    padding: 5px 4px;
+    border-radius: 3px;
+    font-size: 15px;
     cursor: pointer;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+.form-group input::placeholder {
+    color: #dadada;
 }
 
 .form-group input:hover{
@@ -111,9 +125,10 @@
 }
 .container .btn{
     display: block;
-    width: 220px;
+    width: 250px;
     border-radius: 8px;
-    margin: 8px auto;
+    margin:auto;
+    margin-top: 15px;
     font-size: 18px;
 }
 .container h1{
